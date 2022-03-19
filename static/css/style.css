@@ -1,12 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=PT+Sans:ital@0;1&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: box-content;
+    font-family: 'DM sans', sans-serif;
 }
 
-.form-conteneur {
-    margin: 0 auto;
+.conteneur {
+    margin: 15px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 70%;
+    text-align: center;
+    height: 80vh;
+    box-shadow: 5px 5px 5px 0px #EDEDED;
+}
+
+.conteneur h1 {
+    margin: 20px 20px 80px 20px;
+    font-family: 'PT sans', sans-serif;
+}
+
+.conteneur p a {
+    text-decoration: none;
 }
 
