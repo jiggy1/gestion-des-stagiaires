@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Formulaire{% endblock %}
+
+{% block body%}
+    <div class="conteneur">
+        <h1>Formulaire</h1>
+
+        <form method="post">
+            <input type="text" placeholder="Nom" required>
+            <input type="text" placeholder="Prenom" required>
+
+            <label for="masculin">Masculin
+                <input type="radio" id="masculin" name="genre" value="m" checked>
+            </label>
+            <label for="feminin">Feminin
+                <input type="radio" id="feminin" name="genre" value="f">
+            </label>
+            <button type="submit">Valider</button>
+        </form>
+    </div>
+{% endblock %}
