@@ -8,11 +8,11 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/form', methods=['GET', 'POST'])
-def enregistrer():
+@app.route('/enregistrement', methods=['GET', 'POST'])
+def enregistrement():
     if request.method == 'POST':
 
         return render_template("validation.html")
 
-    return render_template('form.html')
+    return render_template('enregistrement.html')
 
