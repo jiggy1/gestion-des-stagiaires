@@ -1,15 +1,22 @@
 {% extends 'base.html' %}
-{% block title %}Formulaire{% endblock %}
 
 {% block body%}
     <div class="conteneur">
-        <h1>Formulaire</h1>
+        <h1>{% block title %}Formulaire{% endblock %}</h1>
 
         <form method="post">
             <h2>Veuillez les informations sur le stagiaire</h2>
-            <input type="text" placeholder="Nom" required><br>
-            <input type="text" placeholder="Prenom" required><br>
-
+            <input type="text" placeholder="Nom" name="nom" required>
+            <br>
+            <input type="text" placeholder="Prenom" name="prenom" required>
+            <br>
+            <select name="departement" id="departement">
+                <option value="informatique">Informatique</option>
+                <option value="rh">RH</option>
+                <option value="logistique">Logistique</option>
+                <option value="comptabilite">Comptabilité</option>
+            </select>
+            <br>
             <label for="masculin">Masculin
                 <input type="radio" id="masculin" name="genre" value="m" checked>
             </label>

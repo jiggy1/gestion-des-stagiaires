@@ -8,5 +8,27 @@
         <p>Bienvenue sur la plateforme de gestion des stagiaires.</p>
 
         <p>Cliquez <a href="{{ url_for('enregistrement') }}">ici</a> pour l'enregistrement </p>
+
+
+            <table>
+                    <tr>
+                        <th>id</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Departement</th>
+                        <th>Genre</th>
+                    </tr>
+                {% for stagiaire in stagiaires %}
+                    <tr>
+                        <td>{{ stagiaire[0] }}</td>
+                        <td>{{ stagiaire[1] }}</td>
+                        <td>{{ stagiaire[2] }}</td>
+                        <td>{{ stagiaire[3] }}</td>
+                        <td>{{ stagiaire[5] }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+
     </div>
 {% endblock %}
